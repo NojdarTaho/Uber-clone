@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/demo.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Document_files/demo.css">
+    <link href="./Document_files/uber-move-text" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <h4 class="uber-logo">Uber</h4>
+        </div>
+        <nav>
+            <ul class="nav-items">
+                <li><a class="nav-item" href="http://127.0.0.1:5500/demo.html#">Company</a></li>
+                <li><a class="nav-item" href="http://127.0.0.1:5500/demo.html#">Saftey</a></li>
+                <li><a class="nav-item" href="http://127.0.0.1:5500/demo.html#">Help</a></li>
+            </ul>
+        </nav>
+        
+        <div class="left-bar">
+        <nav>
+            <ul class="side-nav">
+                <li><a href="http://127.0.0.1:5500/demo.html#" class="left-items">EN</a></li>
+                <li><a href="http://127.0.0.1:5500/demo.html#" class="left-items">Products</a></li>
+                <li><a href="http://127.0.0.1:5500/demo.html#" class="left-items">login</a></li>
+                <li><a href="http://127.0.0.1:5500/demo.html#" class="sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+        </div>  
+    </header>
+
+
+
+
+<section class="main">
+
+    <div class="container">
+
+        <div class="intro-box">
+            <div>
+            <img src="./Document_files/connection.svg" alt="connection bar">
+            <h4 class="con-header">Drive or deliver</h4>
+            </div>
+            <div>
+                <img src="./Document_files/restaurant-outlined.svg" alt="restaurant logo">
+                <h4 class="fork-header">Eat</h4>
+                </div>
+            <div>
+            <img src="./Document_files/car.svg" alt="logo of a car">
+            <h4 class="car-header">Ride</h4>
+            </div>    
+        </div>
+        
+                <h2>Get in the driver's seat and get paid.</h2>
+                <p>Drive on the platform with the largest network of active riders.</p>
+                <a href="http://127.0.0.1:5500/demo.html#" id="sign-select">Sign up to drive</a>
+                <a href="http://127.0.0.1:5500/demo.html#" id="info-link">Learn more about driving and delivering</a>
+           
+    </div>
+
+</section>
+
+<div class="business-section">
+    <div class="business-main">
+        <img src="./Document_files/city.png" alt="">
+        <h2>Uber for Busniess</h2>
+    </div>
+</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>
